@@ -1,0 +1,57 @@
+@baseUrl = http://localhost:3001
+@contentType = application/json
+
+
+
+### Create a Account
+POST {{baseUrl}}/auth/sign-up
+Content-Type: {{contentType}}
+
+{
+    "email": "mayko5@teste.com",
+    "password": "123456",
+    "password_confirmation": "123456"
+}
+
+### Sign in
+POST {{baseUrl}}/auth/sign-in
+Content-Type: {{contentType}}
+
+{
+    "email": "mayko5@teste.com",
+    "password": "123456"
+}
+
+### List Links
+GET {{baseUrl}}/link
+Content-Type: {{contentType}}
+
+### Create Link
+POST {{baseUrl}}/link
+Content-Type: {{contentType}}
+
+{
+    "label": "Meu Site",
+    "url": "https://google.com",
+    "isSocial": false
+}
+
+### Get a link by id
+
+GET {{baseUrl}}/link/1
+Content-Type: {{contentType}}
+
+### Update a Link
+PUT {{baseUrl}}/link/1
+Content-Type: {{contentType}}
+
+{
+    "label": "Meu Novo Site",
+    "url": "https://google.com",
+    "isSocial": false
+}
+
+### Delete a Link
+DELETE {{baseUrl}}/link/1
+Content-Type: {{contentType}}
+
