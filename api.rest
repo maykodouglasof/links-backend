@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:3001
 @contentType = application/json
 
-@token = 
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTkzOTgzMzMwLCJleHAiOjE1OTM5ODUxMzB9.BUlpIPbuG4hLBJlVMlP20OaQm-qKV0bNMpMjofCAjQc
 
 ### Create a Account
 POST {{baseUrl}}/auth/sign-up
