@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:3001
 @contentType = application/json
 
-
+@token = 
 
 ### Create a Account
 POST {{baseUrl}}/auth/sign-up
@@ -25,6 +25,7 @@ Content-Type: {{contentType}}
 ### List Links
 GET {{baseUrl}}/link
 Content-Type: {{contentType}}
+Authorization: Bearer {{token}}
 
 ### Create Link
 POST {{baseUrl}}/link
