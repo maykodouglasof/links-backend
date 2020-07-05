@@ -20,7 +20,7 @@ router.get('/sign-up', async (req, res) => {
     const hash = bcrypt.hashSync(password, saltRounds);
     const newAccount = await Account.create({ email, password: hash });
 
-    return res.json(newAccount);
+    return res.jsonOK(newAccount);
 });
 
 module.exports = router;
